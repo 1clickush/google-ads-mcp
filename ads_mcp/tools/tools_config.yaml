@@ -1,0 +1,13 @@
+# tools_config.yaml
+#
+# Tools configuration for the Google Ads MCP server.
+# Modify this file to enable/disable tool namespaces or set custom prefixes.
+
+namespaces:
+  customers: true
+  search: true
+  metadata: true
+  # Write tools: mutate, Customer Match and click conversions. Every tool
+  # validates only by default and needs validate_only=false AND confirm=true to
+  # apply. Set GOOGLE_ADS_MCP_DISABLE_WRITES=true to switch them off.
+  write: true
